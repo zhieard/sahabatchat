@@ -394,7 +394,7 @@ $chat_id2 = $userrr;
 }
 }
 
-$mes = "Sahabat Mu Meninggalkan Obrolan 🙄🙄
+$mes = "Obrolan Berhenti 🙄🙄
 Gunakan /search untuk mencari sahabat lain";
 $mes = rawurlencode($mes);
 $ch = curl_init();
@@ -420,8 +420,8 @@ exit();
 }
 // Jika Terdeteksi /search
 if(preg_match("/\/search/", $text) || preg_match("/\/findboy/", $text) || preg_match("/\/findgirl/", $text)){
-$mes = "Sahabat Di Temukan !!
-gunakan /stop untuk mengakhiri percakapan";
+$mes = "Kamu Masih Dalam Percakapan !!
+Gunakan /stop untuk mengakhiri percakapan";
 $mes = rawurlencode($mes);
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$mes");
